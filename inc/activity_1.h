@@ -30,6 +30,10 @@
 #define BUTTON_SENSOR_SWITCH (PD0)  /**< Switch 1 for button sensor */
 #define HEATER_SWITCH (PD1)  /**< Switch 2 for heater */
 
+#define LED_OUTPUT (DDRB)  /**< Output data register */
+#define LED_OUTPUT_PIN (DDB0)  /**< ouput pin */
+#define SWITCH_INPUT (DDRD)  /**< input data register */
+
 /**
  * Include files
  */ 
