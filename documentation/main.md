@@ -1,1 +1,1 @@
-@mainpage  HeatSensingApp  Chinmayi B C@subpage project_main.c
+@mainpage  HeatSensingApp  Chinmayi B C@subpage main.c
