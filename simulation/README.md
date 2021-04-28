@@ -1,4 +1,4 @@
-# Activity1
+# Output
 |ON|OFF|
 |:--:|:--:|
 |![ON](Activity1_ON.png)|![OFF](Activity1_OFF.png)|
