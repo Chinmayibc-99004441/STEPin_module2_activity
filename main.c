@@ -1,4 +1,5 @@
 #include "activity_1.h"
+#include "activity_2.h"
 
 int main(void)
 {
