@@ -6,13 +6,13 @@
  */
 void peripheral_init(void)
 {
-	/* Configure LED Pin as output */
-	DDRB |= (1 << DDB0);
+    /* Configure LED Pin as output */
+    LED_OUTPUT |= (1 <<LED_OUTPUT_PIN);
     /* Configure switch pins as input */
-    DDRD&=~(1<<BUTTON_SENSOR_SWITCH);
+    SWITCH_INPUT&=~(1<<BUTTON_SENSOR_SWITCH);
     SWITCH_PORT|=(1<<BUTTON_SENSOR_SWITCH);
 
-    DDRD&=~(1<<HEATER_SWITCH);
+    SWITCH_INPUT&=~(1<<HEATER_SWITCH);
     SWITCH_PORT|=(1<<HEATER_SWITCH);
 }
 /**
