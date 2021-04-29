@@ -20,11 +20,11 @@ uint16_t ReadADC(uint8_t ADC_channel)
     ADC_status|=(1<<ADC_conversion_finish);
     return(ADC);
 }
-uint16_t ADC_value;
-void activity_2(void)
+uint16_t activity_2(void)
 {
     peripheral_init();
     InitADC();
+    volatile uint16_t ADC_value;
     if(check_switch_state())
         {
             change_led_state(LED_ON);
@@ -36,5 +36,5 @@ void activity_2(void)
             change_led_state(LED_OFF);
 		    delay_ms(LED_OFF_TIME);
         }
-    
+    return ADC_value;
 }
