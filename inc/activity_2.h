@@ -47,6 +47,6 @@ uint16_t ReadADC(uint8_t ADC_channel);
 /**
  * @brief function where the code execution starts
  */
-void activity_2(void);
+uint16_t activity_2(void);
 
 #endif /** __ACTIVITY_2_H_ */
