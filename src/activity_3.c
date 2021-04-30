@@ -8,7 +8,7 @@ void pwm_config(void)
 void activity_3(volatile uint16_t ADC_value)
 {
     pwm_config();
-    if(ADC_value<=200)
+    if((ADC_value==0) && (ADC_value<=200))
     {
        OUTPUT_COMPARE_REG=0xCD; /* 20% duty cycle */ 
     }
