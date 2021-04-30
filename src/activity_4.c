@@ -21,7 +21,7 @@ void message()
 }
 void USARTWriteChar(uint16_t temperature_value)
 {
-    if((temperature_value==0)&&(temperature_value<=200))
+    if((temperature_value>=0)&&(temperature_value<=200))
     {
         message();
         unsigned char display_temperature[] = "20"; /* 20% duty cycle*/
